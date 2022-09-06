@@ -18,7 +18,10 @@ Route::get('/', function () {
 });
 
 Route::get('/actualizaciones', function ()  {
+    //$ultima = "Creacion del sistema";
+    //return view("paginas/actualizaciones",['ultima' => $ultima]);// ->with(['ultima' => $ultima]);
     return view("paginas/actualizaciones");
+    //return view("paginas/actualizaciones",compact('versiones'));
 });
 
 Route::get('/contacto', function ()  {

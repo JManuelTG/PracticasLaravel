@@ -7,6 +7,6 @@
     <title>Actulizaciones</title>
 </head>
 <body>
-    <h1>actualizaciones</h1>
+    
 </body>
 </html>
