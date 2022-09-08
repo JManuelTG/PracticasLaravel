@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\SitioController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,25 +19,29 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/actualizaciones', function ()  {
-    //$ultima = "Creacion del sistema";
-    //return view("paginas/actualizaciones",['ultima' => $ultima]);// ->with(['ultima' => $ultima]);
-    return view("paginas/actualizaciones");
-    //return view("paginas/actualizaciones",compact('versiones'));
-});
+// Route::get('/actualizaciones', function ()  {
+//     //$ultima = "Creacion del sistema";
+//     //return view("paginas/actualizaciones",['ultima' => $ultima]);// ->with(['ultima' => $ultima]);
+//     return view("paginas/actualizaciones");
+//     //return view("paginas/actualizaciones",compact('versiones'));
+// });
 
-Route::get('/contacto', function ()  {
-    return view("paginas.contacto");
-});
+// Route::get('/contacto', function ()  {
+//     return view("paginas.contacto");
+// });
 
-Route::get('/precios', function ()  {
-    return view("paginas/precios");
-});
+// Route::get('/precios', function ()  {
+//     return view("paginas/precios");
+// });
 
-Route::get('/landingpage', function() {
-    return view("landingpage");
-} );
+// Route::get('/landingpage', function() {
+//     return view("landingpage");
+// } );
 
-Route::get('/contacto/{codigo?}', function($codigo = null){
-    return view("contacto",compact('codigo'));
-} );
+// Route::get('/contacto/{codigo?}', function($codigo = null){
+//     return view("contacto",compact('codigo'));
+// } );
+
+Route::get('/contacto/{codigo?}', [SitioController::class, 'contacto'] );
+
+Route::get('/landingpage',[SitioController::class, 'landingpage']);
