@@ -31,3 +31,11 @@ Route::get('/contacto', function ()  {
 Route::get('/precios', function ()  {
     return view("paginas/precios");
 });
+
+Route::get('/landingpage', function() {
+    return view("landingpage");
+} );
+
+Route::get('/contacto/{codigo?}', function($codigo = null){
+    return view("contacto",compact('codigo'));
+} );
