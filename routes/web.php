@@ -42,6 +42,10 @@ Route::get('/', function () {
 //     return view("contacto",compact('codigo'));
 // } );
 
-Route::get('/contacto/{codigo?}', [SitioController::class, 'contacto'] );
+// Route::get('/contacto/{codigo?}', [SitioController::class, 'contacto'] );
+
+Route::get('/contacto', [SitioController::class, 'contacto'] );
+
+Route::post('/recibe_form_contacto', [SitioController::class, 'recibe_form_contacto'] );
 
 Route::get('/landingpage',[SitioController::class, 'landingpage']);

@@ -1,116 +1,463 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tailwind Profile Card Template : Tailwind Toolbox</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="author" content="">
-
-  <!-- Font Awesome if you need it
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-  -->
-  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/> 
-  <!--Replace with your tailwind.css once created-->
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LandingPage</title>
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,400i,500,700|Titillium+Web:600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
+<body class="is-boxed">
+    <div class="body-wrap boxed-container">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="#">
+								<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+								    <title>Ellie</title>
+								    <defs>
+								        <linearGradient x1="0%" y1="0%" y2="100%" id="logo-a">
+								            <stop stop-color="#4353FF" offset="0%"/>
+								            <stop stop-color="#4353FF" stop-opacity=".32" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="0%" y1="0%" y2="100%" id="logo-b">
+								            <stop stop-color="#4353FF" offset="0%"/>
+								            <stop stop-color="#4353FF" stop-opacity=".32" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="0%" y1="0%" y2="100%" id="logo-c">
+								            <stop stop-color="#78F9FF" stop-opacity=".24" offset="0%"/>
+								            <stop stop-color="#43F1FF" offset="55.496%"/>
+								            <stop stop-color="#43F1FF" stop-opacity=".24" offset="100%"/>
+								        </linearGradient>
+								    </defs>
+								    <g fill="none" fill-rule="evenodd">
+								        <path d="M4 0h12v16H0V4a4 4 0 0 1 4-4z" fill="url(#logo-a)"/>
+								        <path d="M16 16h16v12a4 4 0 0 1-4 4H16V16z" fill="url(#logo-b)"/>
+								        <path d="M11.5 20.5H.5v1h10v10h1v-11z" stroke="url(#logo-c)" transform="matrix(-1 0 0 1 12 0)"/>
+								        <path d="M31.5.5h-11v1h10v10h1V.5z" stroke="url(#logo-c)" transform="matrix(1 0 0 -1 0 12)"/>
+								    </g>
+								</svg>
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover" style="background-image:url('https://source.unsplash.com/1L71sPT5XKc');">
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+						<div class="hero-copy">
+	                        <h1 class="hero-title mt-0 is-revealing">Landing template for startups</h1>
+	                        <p class="hero-paragraph is-revealing">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
+							<div class="hero-form field field-grouped is-revealing">
+	                            <div class="control control-expanded">
+	                                <input class="input" type="email" name="email" placeholder="Your best email&hellip;">
+	                            </div>
+	                            <div class="control">
+	                                <a class="button button-primary button-block" href="#">Notify Me</a>
+	                            </div>
+	                        </div>
+						</div>
+						<div class="hero-illustration">
+							<div class="hero-bg">
+								<svg width="720" height="635" xmlns="http://www.w3.org/2000/svg">
+								    <defs>
+								        <linearGradient x1="50%" y1="0%" x2="50%" y2="97.738%" id="a">
+								            <stop stop-color="#151616" offset="0%"/>
+								            <stop stop-color="#222424" offset="100%"/>
+								        </linearGradient>
+								    </defs>
+								    <path d="M0 0h720v504.382L279.437 630.304c-53.102 15.177-108.454-15.567-123.631-68.669-.072-.25-.142-.5-.211-.75L0 0z" fill="url(#a)" fill-rule="evenodd"/>
+								</svg>
+							</div>
+							<div class="hero-square hero-square-1 is-moving-object is-rotating">
+								<svg width="220" height="220" xmlns="http://www.w3.org/2000/svg">
+									<defs>
+										<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="square-1-a">
+											<stop stop-color="#4353FF" offset="0%"/>
+											<stop stop-color="#4353FF" stop-opacity=".32" offset="100%"/>
+										</linearGradient>
+										<linearGradient x1="18.74%" y1="17.384%" x2="96.787%" y2="88.669%" id="square-1-b">
+											<stop stop-color="#43F1FF" stop-opacity="0" offset="0%"/>
+											<stop stop-color="#43F1FF" offset="53.489%"/>
+											<stop stop-color="#43F1FF" stop-opacity="0" offset="100%"/>
+										</linearGradient>
+									</defs>
+									<g fill="none" fill-rule="evenodd">
+										<path fill="url(#square-1-a)" opacity=".64" d="M0 0h220v220H0z"/>
+										<path d="M0 65.022V61.7c51.102-26.116 77.322-13.388 77.322 38.41 0 57.718 25.944 67.701 79.782 30.373l1.709 2.466c-55.678 38.604-84.491 27.517-84.491-32.839 0-49.494-24.315-61.27-74.322-35.087z" fill="url(#square-1-b)" fill-rule="nonzero" opacity=".701"/>
+										<path d="M113.203 220c2.943-57.607 37.666-164 90.473-164 4.973 0 10.458.203 16.324.614v77.24c-5.819.237-11.3 1.007-16.324 2.458-32.685 9.44-57.608 55.87-72.976 83.688h-17.497z" fill-opacity=".096" fill="#43F1FF"/>
+									</g>
+								</svg>
+							</div>
+							<div class="hero-square hero-square-2 is-moving-object is-rotating">
+								<svg width="88" height="88" xmlns="http://www.w3.org/2000/svg">
+									<defs>
+										<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="square-2-a">
+											<stop stop-color="#4353FF" offset="0%"/>
+											<stop stop-color="#4353FF" stop-opacity=".32" offset="100%"/>
+										</linearGradient>
+										<linearGradient x1="-31.43%" y1="104.265%" x2="143.71%" y2="43.581%" id="square-2-b">
+											<stop stop-color="#43F1FF" stop-opacity=".24" offset="0%"/>
+											<stop stop-color="#43F1FF" stop-opacity=".16" offset="100%"/>
+										</linearGradient>
+									</defs>
+									<g fill="none" fill-rule="evenodd">
+										<path fill="url(#square-2-a)" d="M0 0h88v88H0z"/>
+										<path d="M19.717 36.579C13.824 33.969 7.004 32.555 0 31.535V0h88v88H76.869C59.773 67.766 40.697 45.872 19.717 36.579z" fill="url(#square-2-b)"/>
+									</g>
+								</svg>
+							</div>
+							<div class="hero-square hero-square-3 is-moving-object is-rotating">
+								<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+								    <defs>
+								        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="square-3-a">
+								            <stop stop-color="#4353FF" offset="0%"/>
+								            <stop stop-color="#4353FF" stop-opacity=".16" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="-58.825%" y1="39.622%" x2="81.589%" y2="-11.971%" id="square-3-b">
+								            <stop stop-color="#43F1FF" stop-opacity=".24" offset="0%"/>
+								            <stop stop-color="#43F1FF" stop-opacity=".163" offset="100%"/>
+								        </linearGradient>
+								    </defs>
+								    <g fill="none" fill-rule="evenodd" opacity=".64">
+								        <path fill="url(#square-3-a)" d="M0 0h64v64H0z"/>
+								        <path d="M14.03 0C27.176 13.07 42 27.791 42 38.165c0 17.46-14.154-11.127-31.614-11.127-2.67 0-6.289.931-10.386 2.406V0h14.03z" fill="url(#square-3-b)"/>
+								    </g>
+								</svg>
+							</div>
+							<div class="hero-square hero-square-4 is-moving-object is-rotating">
+								<svg width="320" height="320" xmlns="http://www.w3.org/2000/svg">
+								    <defs>
+								        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="square-4-a">
+								            <stop stop-color="#4353FF" offset="0%"/>
+								            <stop stop-color="#4353FF" stop-opacity=".32" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="18.74%" y1="17.384%" x2="96.787%" y2="88.669%" id="square-4-b">
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="0%"/>
+								            <stop stop-color="#43F1FF" offset="53.489%"/>
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="0%" y1="57.64%" x2="94.346%" y2="8.32%" id="square-4-c">
+								            <stop stop-color="#43F1FF" stop-opacity=".24" offset="0%"/>
+								            <stop stop-color="#43F1FF" stop-opacity=".16" offset="100%"/>
+								        </linearGradient>
+								        <radialGradient cx="100%" cy="100%" fx="100%" fy="100%" r="136.8%" id="square-4-d">
+								            <stop stop-color="#43F1FF" offset="0%"/>
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="100%"/>
+								        </radialGradient>
+								        <radialGradient cx="100%" cy="100%" fx="100%" fy="100%" r="140.264%" id="square-4-e">
+								            <stop stop-color="#43F1FF" offset="0%"/>
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="100%"/>
+								        </radialGradient>
+								        <radialGradient cx="100%" cy="100%" fx="100%" fy="100%" r="137.638%" id="square-4-f">
+								            <stop stop-color="#43F1FF" offset="0%"/>
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="100%"/>
+								        </radialGradient>
+								    </defs>
+								    <g fill="none" fill-rule="evenodd">
+								        <rect fill="url(#square-4-a)" width="320" height="320" rx="2"/>
+								        <path d="M278.958 209.715c-54.758 37.966-82.136 27.43-82.136-31.606s-34.335-65.905-103.005-20.607C49.492 185.246 33.604 160.412 46.154 83" stroke="url(#square-4-b)" stroke-width="3"/>
+								        <path d="M71.05 41.844c57.243-16.532 154.657 38.697 154.657-16.532 0-8.934-4.692-17.934-10.123-25.312H0v99.92c19.6-22.665 44.942-50.536 71.05-58.076z" fill="url(#square-4-c)"/>
+								        <path d="M320 320V66C179.72 66 66 179.72 66 320h254z" fill="url(#square-4-d)" opacity=".16"/>
+								        <path d="M320 320V131c-104.382 0-189 84.618-189 189h189z" fill="url(#square-4-e)" opacity=".32"/>
+								        <path d="M320 320V196c-68.483 0-124 55.517-124 124h124z" fill="url(#square-4-f)"/>
+								    </g>
+								</svg>
+							</div>
+							<div class="hero-square hero-square-5 is-moving-object is-rotating">
+								<svg width="141" height="140" xmlns="http://www.w3.org/2000/svg">
+								    <defs>
+								        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="square-5-a">
+								            <stop stop-color="#4353FF" offset="0%"/>
+								            <stop stop-color="#4353FF" stop-opacity=".32" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="27.288%" y1="50%" x2="172.696%" y2="-8.701%" id="square-5-b">
+								            <stop stop-color="#43F1FF" stop-opacity=".24" offset="0%"/>
+								            <stop stop-color="#43F1FF" stop-opacity=".16" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="18.74%" y1="17.384%" x2="96.787%" y2="88.669%" id="square-5-c">
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="0%"/>
+								            <stop stop-color="#43F1FF" offset="53.489%"/>
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="100%"/>
+								        </linearGradient>
+								    </defs>
+								    <g fill="none" fill-rule="evenodd">
+								        <path opacity=".24" fill="url(#square-5-a)" d="M19 18h128v128H19z" transform="translate(-6 -6)"/>
+								        <path d="M147 76.088V18h-35.004c-4.63 24.206-16.838 55.057-44.819 79.224-63.217 54.6 46.59-21.136 79.823-21.136z" opacity=".24" fill="url(#square-5-b)" transform="translate(-6 -6)"/>
+								        <path d="M0 0l39.459 40.249" stroke="url(#square-5-c)" stroke-width="3" transform="translate(-6 -6)"/>
+								    </g>
+								</svg>
+							</div>
+							<div class="hero-square hero-square-6 is-moving-object is-rotating">
+								<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+								    <defs>
+								        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="square-6-a">
+								            <stop stop-color="#4353FF" offset="0%"/>
+								            <stop stop-color="#4353FF" stop-opacity=".32" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="14.98%" y1="57.941%" x2="95.966%" y2="33.366%" id="square-6-b">
+								            <stop stop-color="#43F1FF" stop-opacity=".24" offset="0%"/>
+								            <stop stop-color="#43F1FF" stop-opacity=".16" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="97.033%" y1="97.033%" x2="0%" y2="0%" id="square-6-c">
+								            <stop stop-color="#43F1FF" offset="0%"/>
+								            <stop stop-color="#43F1FF" stop-opacity=".24" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="18.74%" y1="17.384%" x2="96.787%" y2="88.669%" id="square-6-d">
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="0%"/>
+								            <stop stop-color="#43F1FF" offset="53.489%"/>
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="100%"/>
+								        </linearGradient>
+								    </defs>
+								    <g fill="none" fill-rule="evenodd">
+								        <path fill="url(#square-6-a)" d="M0 0h128v128H0z"/>
+								        <path d="M27.652 128H0V32.762c13.602-4.224 26.559-6.606 36.988-6.606 42.25 0-38.976 13.508-19.488 50.235C25.002 90.529 28.544 109.73 27.652 128z" fill="url(#square-6-b)"/>
+								        <path fill="url(#square-6-c)" opacity=".32" d="M88 88h40v40H88z"/>
+								        <path d="M69 68l39.459 40.249" stroke="url(#square-6-d)" stroke-width="3"/>
+								    </g>
+								</svg>
+							</div>
+							<div class="hero-square hero-square-7 is-moving-object is-rotating">
+								<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+								    <defs>
+								        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="square-7-a">
+								            <stop stop-color="#4353FF" offset="0%"/>
+								            <stop stop-color="#4353FF" stop-opacity=".32" offset="100%"/>
+								        </linearGradient>
+								        <radialGradient cx="-5.754%" cy="67.691%" fx="-5.754%" fy="67.691%" r="140.869%" gradientTransform="scale(-1 -.64163) rotate(55.582 1.643 -.08)" id="square-7-b">
+								            <stop stop-color="#43F1FF" offset="0%"/>
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="100%"/>
+								        </radialGradient>
+								        <linearGradient x1="0%" y1="23.176%" x2="96.787%" y2="88.669%" id="square-7-c">
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="0%"/>
+								            <stop stop-color="#43F1FF" offset="32.912%"/>
+								            <stop stop-color="#43F1FF" stop-opacity="0" offset="100%"/>
+								        </linearGradient>
+								    </defs>
+								    <g fill="none" fill-rule="evenodd" opacity=".601">
+								        <path fill="url(#square-7-a)" d="M0 0h64v64H0z"/>
+								        <path d="M0 64V.1C22.901 1.644 41 20.709 41 44c0 7.202-1.73 14-4.798 20H0z" fill="url(#square-7-b)"/>
+								        <path d="M63.925 58.495c-4.136-2.459-9.143-4.747-15.272-6.916-23.745-8.402-32.768-20.182-27.972-32.9 2.7-7.16 9.914-13.947 18.763-18.679h7.221c-10.84 4.263-20.209 11.866-23.177 19.737-4.076 10.81 3.808 21.103 26.166 29.014 5.524 1.955 10.252 4.048 14.271 6.3v3.444z" fill="url(#square-7-c)" fill-rule="nonzero"/>
+								    </g>
+								</svg>
+							</div>
+							<div class="hero-square hero-square-8 is-moving-object is-rotating">
+								<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+								    <defs>
+								        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="square-8-a">
+								            <stop stop-color="#4353FF" offset="0%"/>
+								            <stop stop-color="#4353FF" stop-opacity=".32" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="66.071%" y1="50%" x2="168.952%" y2="11.585%" id="square-8-b">
+								            <stop stop-color="#43F1FF" stop-opacity=".123" offset="0%"/>
+								            <stop stop-color="#43F1FF" stop-opacity=".16" offset="100%"/>
+								        </linearGradient>
+								    </defs>
+								    <g fill="none" fill-rule="evenodd">
+								        <path fill="url(#square-8-a)" opacity=".24" d="M0 0h40v40H0z"/>
+								        <path d="M40 0h-4.67c-.999 7.225-3.804 17.536-12.85 25.35-15.393 13.294 5.041-.287 17.36-4.644L40 0z" fill="url(#square-8-b)"/>
+								    </g>
+								</svg>
+							</div>
+							<div class="hero-dots hero-dots-1 is-moving-object is-translating" data-translating-factor="160">
+								<svg width="279" height="97" xmlns="http://www.w3.org/2000/svg">
+								    <g fill="#43F1FF" fill-rule="evenodd">
+								        <path d="M71.686 0l-2.899 1.334L68 4.157l.926 2.688L71.686 8l2.6-1.31L76 4.156l-1.295-2.94z"/>
+								        <path fill-opacity=".64" d="M38.843 2l-1.45.667L37 4.079l.463 1.344 1.38.577 1.3-.655L41 4.079l-.648-1.47z"/>
+								        <path fill-opacity=".24" d="M65.843 55l-1.45.667L64 57.079l.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+								        <path fill-opacity=".64" d="M94.765 29l-2.175 1-.59 2.118.695 2.016 2.07.866 1.95-.983 1.285-1.9-.972-2.204z"/>
+								        <path fill-opacity=".8" d="M58.765 25l-2.175 1-.59 2.118.695 2.016 2.07.866 1.95-.983 1.285-1.9-.972-2.204z"/>
+								        <path fill-opacity=".48" d="M18.843 44l-1.45.667L17 46.079l.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+								        <path fill-opacity=".64" d="M8.843 29l-1.45.667L7 31.079l.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+								        <path fill-opacity=".48" d="M32.843 29l-1.45.667L31 31.079l.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47zM.922 45l-.725.333L0 46.04l.232.672.69.289.65-.328L2 46.04l-.324-.735z"/>
+								        <path fill-opacity=".24" d="M267.843 93l-1.45.667-.393 1.412.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+								        <path fill-opacity=".8" d="M275.765 75l-2.175 1-.59 2.118.695 2.016 2.07.866 1.95-.983 1.285-1.9-.972-2.204z"/>
+								        <path fill-opacity=".48" d="M259.843 78l-1.45.667-.393 1.412.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+								    </g>
+								</svg>
+							</div>
+							<div class="hero-dots hero-dots-2 is-moving-object is-translating" data-translating-factor="120">
+								<svg width="138" height="132" xmlns="http://www.w3.org/2000/svg">
+								    <g fill="#43F1FF" fill-rule="evenodd">
+								        <path d="M73.686 66l-2.899 1.334L70 70.157l.926 2.688L73.686 74l2.6-1.31L78 70.156l-1.295-2.94z"/>
+								        <path fill-opacity=".64" d="M108.843 0l-1.45.667L107 2.079l.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+								        <path fill-opacity=".24" d="M135.843 53l-1.45.667-.393 1.412.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+								        <path fill-opacity=".64" d="M107.765 53l-2.175 1-.59 2.118.695 2.016 2.07.866 1.95-.983 1.285-1.9-.972-2.204z"/>
+								        <path fill-opacity=".8" d="M128.765 23l-2.175 1-.59 2.118.695 2.016 2.07.866 1.95-.983 1.285-1.9-.972-2.204z"/>
+								        <path fill-opacity=".48" d="M88.843 42l-1.45.667L87 44.079l.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+								        <path fill-opacity=".64" d="M78.843 27l-1.45.667L77 29.079l.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+								        <path fill-opacity=".48" d="M102.843 27l-1.45.667-.393 1.412.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47zM70.922 43l-.725.333-.197.706.232.672.69.289.65-.328.428-.633-.324-.735z"/>
+								        <path d="M2.765 126L.59 127 0 129.118l.695 2.016 2.07.866 1.95-.983 1.285-1.9-.972-2.204z"/>
+								        <path fill-opacity=".64" d="M24.843 127l-1.45.667-.393 1.412.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+								        <path fill-opacity=".48" d="M6.922 114l-.725.333-.197.706.232.672.69.289.65-.328.428-.633-.324-.735z"/>
+								    </g>
+								</svg>
+							</div>
+							<div class="hero-dots hero-dots-3 is-moving-object is-translating" data-translating-factor="160">
+								<svg width="98" height="59" xmlns="http://www.w3.org/2000/svg">
+								    <g fill="#43F1FF" fill-rule="evenodd">
+								        <path d="M26.314 0l2.899 1.334L30 4.157l-.926 2.688L26.314 8l-2.6-1.31L22 4.156l1.295-2.94z"/>
+								        <path fill-opacity=".64" d="M59.157 2l1.45.667L61 4.079l-.463 1.344-1.38.577-1.3-.655L57 4.079l.648-1.47z"/>
+								        <path fill-opacity=".24" d="M32.157 55l1.45.667.393 1.412-.463 1.344-1.38.577-1.3-.655L30 57.079l.648-1.47z"/>
+								        <path fill-opacity=".64" d="M3.235 29l2.175 1L6 32.118l-.695 2.016-2.07.866-1.95-.983L0 32.117l.972-2.204z"/>
+								        <path fill-opacity=".8" d="M39.235 25l2.175 1 .59 2.118-.695 2.016-2.07.866-1.95-.983-1.285-1.9.972-2.204z"/>
+								        <path fill-opacity=".48" d="M79.157 44l1.45.667.393 1.412-.463 1.344-1.38.577-1.3-.655L77 46.079l.648-1.47z"/>
+								        <path fill-opacity=".64" d="M89.157 29l1.45.667.393 1.412-.463 1.344-1.38.577-1.3-.655L87 31.079l.648-1.47z"/>
+								        <path fill-opacity=".48" d="M65.157 29l1.45.667.393 1.412-.463 1.344-1.38.577-1.3-.655L63 31.079l.648-1.47zM97.078 45l.725.333.197.706-.232.672-.69.289-.65-.328L96 46.04l.324-.735z"/>
+								    </g>
+								</svg>
+							</div>
+							<div class="hero-line hero-line-1">
+								<svg width="344" height="217" xmlns="http://www.w3.org/2000/svg">
+								    <defs>
+								        <linearGradient x1="18.74%" y1="17.384%" x2="96.787%" y2="88.669%" id="line-1-a">
+								            <stop stop-color="#5D6AFF" stop-opacity="0" offset="0%"/>
+								            <stop stop-color="#5D6AFF" offset="53.489%"/>
+								            <stop stop-color="#5D6AFF" stop-opacity="0" offset="100%"/>
+								        </linearGradient>
+								    </defs>
+								    <path d="M340.86 180.664l2.281 3.287c-79.796 55.378-120.994 39.511-120.994-47.035 0-82.777-47.283-92.246-144.735-27.901-32.607 20.428-55.391 21.53-67.544 2.516C-1.882 93.147-3.092 56.053 5.987 0l3.948.64c-8.928 55.125-7.743 91.453 3.303 108.736 10.644 16.653 31.058 15.666 62.01-3.725 99.65-65.797 150.9-55.534 150.9 31.265 0 83.03 37.371 97.424 114.713 43.748z" fill="url(#line-1-a)" fill-rule="nonzero" transform="matrix(-1 0 0 1 343.141 0)"/>
+								</svg>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </section>
 
+            <section class="features section">
+                <div class="container">
+                    <div class="features-inner section-inner">
+						<div class="features-wrap">
+	                        <div class="feature">
+	                            <div class="feature-inner">
+									<div class="feature-header mb-16">
+										<div class="feature-icon mr-16">
+											<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+											    <g fill-rule="nonzero" fill="none">
+											        <path d="M7 8H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1zM19 8h-6a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1z" fill="#4353FF"/>
+											        <path d="M19 20h-6a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1z" fill="#43F1FF"/>
+											        <path d="M31 8h-6a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1z" fill="#4353FF"/>
+											        <path d="M7 20H1a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1z" fill="#43F1FF"/>
+											        <path d="M7 32H1a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1z" fill="#4353FF"/>
+											        <path d="M29.5 18h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5z" fill="#43F1FF"/>
+											        <path d="M17.5 30h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5zM29.5 30h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5z" fill="#4353FF"/>
+											    </g>
+											</svg>
+		                                </div>
+		                                <h4 class="feature-title m-0">Discover</h4>
+									</div>
+	                                <p class="text-sm mb-0">A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise design elements.</p>
+	                            </div>
+	                        </div>
+							<div class="feature">
+	                            <div class="feature-inner">
+									<div class="feature-header mb-16">
+										<div class="feature-icon mr-16">
+											<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+											    <g fill-rule="nonzero" fill="none">
+											        <path d="M4 12H0V5a5.006 5.006 0 0 1 5-5h7v4H5a1 1 0 0 0-1 1v7z" fill="#43F1FF"/>
+											        <path d="M32 12h-4V5a1 1 0 0 0-1-1h-7V0h7a5.006 5.006 0 0 1 5 5v7zM12 32H5a5.006 5.006 0 0 1-5-5v-7h4v7a1 1 0 0 0 1 1h7v4z" fill="#4353FF"/>
+											        <path d="M27 32h-7v-4h7a1 1 0 0 0 1-1v-7h4v7a5.006 5.006 0 0 1-5 5z" fill="#43F1FF"/>
+											    </g>
+											</svg>
+		                                </div>
+		                                <h4 class="feature-title m-0">Discover</h4>
+									</div>
+	                                <p class="text-sm mb-0">A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise design elements.</p>
+	                            </div>
+	                        </div>
+							<div class="feature">
+	                            <div class="feature-inner">
+									<div class="feature-header mb-16">
+										<div class="feature-icon mr-16">
+											<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+											    <g fill="none" fill-rule="nonzero">
+											        <path d="M16 9c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4z" fill="#4353FF"/>
+											        <path d="M27 9c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4z" fill="#43F1FF"/>
+											        <path d="M27 12c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4z" fill="#4353FF"/>
+											        <path d="M5 23c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4z" fill="#43F1FF"/>
+											        <path d="M27 23c-1.859 0-3.41 1.28-3.858 3h-3.284A3.994 3.994 0 0 0 17 23.142v-3.284c1.72-.447 3-2 3-3.858 0-2.206-1.794-4-4-4-1.859 0-3.41 1.28-3.858 3H8.858A3.994 3.994 0 0 0 6 12.142V8.858c1.72-.447 3-2 3-3.858 0-2.206-1.794-4-4-4S1 2.794 1 5c0 1.858 1.28 3.41 3 3.858v3.284c-1.72.447-3 2-3 3.858 0 2.206 1.794 4 4 4 1.859 0 3.41-1.28 3.858-3h3.284A3.994 3.994 0 0 0 15 19.858v3.284c-1.72.447-3 2-3 3.858 0 2.206 1.794 4 4 4 1.859 0 3.41-1.28 3.858-3h3.284c.447 1.72 2 3 3.858 3 2.206 0 4-1.794 4-4s-1.794-4-4-4z" fill="#4353FF"/>
+											    </g>
+											</svg>
+		                                </div>
+		                                <h4 class="feature-title m-0">Discover</h4>
+									</div>
+	                                <p class="text-sm mb-0">A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise design elements.</p>
+	                            </div>
+	                        </div>
+						</div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-
-  <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
-    
-	<!--Main Col-->
-	<div id="profile" class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
-	
-
-		<div class="p-4 md:p-12 text-center lg:text-left">
-			<!-- Image for mobile view-->
-			<div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/MP0IUfwrn0A')"></div>
-			
-			<h1 class="text-3xl font-bold pt-8 lg:pt-0">Your Name</h1>
-			<div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
-			<p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"><svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/></svg> What you do</p>
-			<p class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start"><svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z"/></svg> Your Location - 25.0000° N, 71.0000° W</p>
-			<p class="pt-8 text-sm">Totally optional short description about yourself, what you do and so on.</p>
-
-			<div class="pt-12 pb-8">
-				<button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
-				  Get In Touch
-				</button> 
+        <footer class="site-footer">
+			<div class="footer-bg">
+				<svg width="385" height="305" xmlns="http://www.w3.org/2000/svg">
+				    <defs>
+				        <linearGradient x1="50%" y1="34.994%" x2="50%" y2="97.738%" id="footer-bg">
+				            <stop stop-color="#151616" offset="0%"/>
+				            <stop stop-color="#222424" offset="100%"/>
+				        </linearGradient>
+				    </defs>
+				    <path d="M384.557 116.012V305H0L210.643 0l173.914 116.012z" fill="url(#footer-bg)" fill-rule="evenodd"/>
+				</svg>
 			</div>
-
-			<div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
-				<a class="link" href="#" data-tippy-content="@facebook_handle"><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"/></svg></a>
-				<a class="link" href="#" data-tippy-content="@twitter_handle"><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></a>
-				<a class="link" href="#" data-tippy-content="@github_handle"><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
-				<a class="link" href="#" data-tippy-content="@unsplash_handle"><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Unsplash</title><path d="M7.5 6.75V0h9v6.75h-9zm9 3.75H24V24H0V10.5h7.5v6.75h9V10.5z"/></svg></a>
-				<a class="link" href="#" data-tippy-content="@dribble_handle"><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Dribbble</title><path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z"/></svg></a>
-				<a class="link" href="#" data-tippy-content="@instagram_handle"><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></a>
-				<a class="link" href="#" data-tippy-content="@youtube_handle"><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>YouTube</title><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></a>
+			<div class="footer-dots is-moving-object is-translating" data-translating-factor="160">
+				<svg width="69" height="91" xmlns="http://www.w3.org/2000/svg">
+				    <g fill="#43F1FF" fill-rule="evenodd">
+				        <path d="M37.105 41.007l-2.9 1.334-.786 2.823.926 2.689 2.76 1.154 2.6-1.31 1.714-2.533-1.296-2.94z"/>
+				        <path fill-opacity=".64" d="M63.109 27.24l-1.45.666-.394 1.412.464 1.344 1.38.577 1.3-.655.856-1.266-.647-1.47z"/>
+				        <path fill-opacity=".24" d="M66.226 86.638l-1.45.667-.393 1.412.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+				        <path fill-opacity=".64" d="M13.497 43.713l-2.175 1-.59 2.118.695 2.016 2.07.866 1.95-.983 1.285-1.9-.972-2.204z"/>
+				        <path fill-opacity=".8" d="M59.076 56.658l-2.175 1-.59 2.117.695 2.017 2.07.866 1.949-.983 1.286-1.9-.972-2.204z"/>
+				        <path fill-opacity=".48" d="M22.262 18.49l-1.45.667-.393 1.412.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+				        <path fill-opacity=".64" d="M23.422.5l-1.45.667-.393 1.412.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47z"/>
+				        <path fill-opacity=".48" d="M2.637 12.5l-1.45.667-.393 1.412.463 1.344 1.38.577 1.3-.655.857-1.266-.648-1.47zM36.563 10.856l-.725.334-.197.706.232.672.69.288.65-.327.428-.633-.324-.735z"/>
+				    </g>
+				</svg>
 			</div>
-			
-			<!-- Use https://simpleicons.org/ to find the svg for your preferred product --> 
+            <div class="container">
+                <div class="site-footer-inner has-top-divider">
+                    <div class="footer-copyright">&copy; 2018 Ellie, all rights reserved</div>
+					<ul class="footer-social-links list-reset">
+						<li>
+							<a href="#">
+								<span class="screen-reader-text">Facebook</span>
+								<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" fill="#FFFFFF"/>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="screen-reader-text">Twitter</span>
+								<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#FFFFFF"/>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="screen-reader-text">Google</span>
+								<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z" fill="#FFFFFF"/>
+								</svg>
+							</a>
+						</li>
+					</ul>
+                </div>
+            </div>
+        </footer>
+    </div>
 
-		</div>
-
-	</div>
-	
-	<!--Img Col-->
-	<div class="w-full lg:w-2/5">
-		<!-- Big profile image for side bar (desktop) -->
-		<img src="https://source.unsplash.com/MP0IUfwrn0A" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
-		<!-- Image from: http://unsplash.com/photos/MP0IUfwrn0A -->
-		
-	</div>
-	
-	
-	<!-- Pin to top right corner -->
-	  <div class="absolute top-0 right-0 h-12 w-18 p-4">
-		<button class="js-change-theme focus:outline-none">🌙</button>
-	  </div>
-
-</div>
-
-	<script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
-	<script src="https://unpkg.com/tippy.js@4"></script>
-	<script>
-		//Init tooltips
-		tippy('.link',{
-		  placement: 'bottom'
-		})
-
-		//Toggle mode
-		const toggle = document.querySelector('.js-change-theme');
-		const body = document.querySelector('body');
-		const profile = document.getElementById('profile');
-		
-		
-		toggle.addEventListener('click', () => {
-
-		  if (body.classList.contains('text-gray-900')) {
-			toggle.innerHTML = "☀️";
-			body.classList.remove('text-gray-900');
-			body.classList.add('text-gray-100');
-			profile.classList.remove('bg-white');
-			profile.classList.add('bg-gray-900');
-		  } else
-		  {
-			toggle.innerHTML = "🌙";
-			body.classList.remove('text-gray-100');
-			body.classList.add('text-gray-900');
-			profile.classList.remove('bg-gray-900');			
-			profile.classList.add('bg-white');
-			
-		  }
-		});
-		
-    </script>
-	
+    <script src="{{ asset('js/main.min.js') }}"></script>
 </body>
-
 </html>
