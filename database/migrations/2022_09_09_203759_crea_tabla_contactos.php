@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('nombre');
             $table->string('correo');
             $table->text('mensaje');
-            $table->boolean('visto');
+            $table->boolean('visto')->default(0);
             $table->timestamps();
 
         });
