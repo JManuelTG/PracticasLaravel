@@ -20,10 +20,13 @@ class SitioController extends Controller
 
     public function recibe_form_contacto(Request $request){
         // dd($request->all());
+
         $request->validate([
             'nombre' => 'required|max:255|min:3',
             'correo' => ['required','email'],
             'mensaje' => 'required',
         ]);
     }
+
+
 }
