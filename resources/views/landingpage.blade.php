@@ -19,7 +19,7 @@
 
 				<!-- Wrapper -->
 					<div id="wrapper">
-
+						<h2>hola</h2>
 						<!-- Panel (Banner) -->
 							<section class="panel banner right">
 								<div class="content color0 span-3-75">
