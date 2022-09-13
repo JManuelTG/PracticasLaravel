@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class SitioController extends Controller
 {
@@ -26,7 +27,9 @@ class SitioController extends Controller
             'correo' => ['required','email'],
             'mensaje' => 'required',
         ]);
-    }
 
+        DB::insert('insert into contactos (nombre, correo, mensaje) values (?,?,?)',[$request->nombre,$request->correo,$request->mensaje]);
+        return redirect("/landingpage");
+    }
 
 }
