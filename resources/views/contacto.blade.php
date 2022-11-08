@@ -7,6 +7,7 @@
 	<title>Contacto</title>
 </head>
 <body>
+	{{$nombre}}
 	<h1>Contacto</h1>
 	<form action="/recibe_form_contacto" method="POST">
 		@csrf

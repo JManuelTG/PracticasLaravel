@@ -16,11 +16,18 @@ class SitioController extends Controller
     //     return view("contacto",compact('codigo'));
     // }
 
-    public function contacto(){
-        return view("contacto");
+    public function contacto($codigo = null){
+        if($codigo == 123){
+            $nombre = 'Manuel';
+            $correo = 'Manuel@test.com';
+        }else{
+            $nombre = '';
+            $correo = '';
+        }
+        return view("contacto", compact('nombre','correo'));
     }
 
-    public function recibe_form_contacto(Request $request){
+    public function guarda(Request $request){
         // dd($request->all());
 
         // $request->validate([
