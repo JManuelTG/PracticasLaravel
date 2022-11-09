@@ -7,7 +7,6 @@
 		<title>Contacto</title>
 	</head>
 	<body>
-		<p>Hola {{$nombre}}</p>
 		<h1>Contacto</h1>
 		<form action="/recibe_form_contacto" method="POST">
 			@csrf
@@ -19,7 +18,7 @@
 			<br>
 
 			<label for="Correo">Correo:</label><br>
-			<input type="mail" name="correo" id="correo" value={{$nombre}} >
+			<input type="mail" name="correo" id="correo" value={{$correo}} >
 			@error('correo')
 				<i>{{ $message }}</i>
 			@enderror
