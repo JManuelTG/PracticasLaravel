@@ -17,7 +17,7 @@ class SitioController extends Controller
     // }
 
     public function contacto($codigo = null){
-        if($codigo == 123){
+        if($codigo == 1234){
             $nombre = 'Manuel';
             $correo = 'Manuel@test.com';
         }else{
@@ -30,11 +30,11 @@ class SitioController extends Controller
     public function guarda(Request $request){
         // dd($request->all());
 
-        // $request->validate([
-            // 'nombre' => 'required|max:255|min:3',
-            // 'correo' => ['required','email'],
-            // 'mensaje' => 'required',
-        // ]);
+         $request->validate([
+             'nombre' => 'required|max:255|min:3',
+             'correo' => ['required','email'],
+             'mensaje' => 'required',
+         ]);
 
         // $contacto = new Contacto();
         // $contacto->nombre = $request->nombre;
