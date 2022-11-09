@@ -110,14 +110,14 @@
 											<div class="fields">
 												<div class="field half">
 													<label for="nombre">Nombre</label>
-													<input type="text" name="nombre" id="nombre" value="{{ old('nombre')}}"/>
+													<input type="text" name="nombre" id="nombre" value={{$nombre}}>
 													@error('nombre')
 														<i>{{ $message }}</i>
 													@enderror
 												</div>
 												<div class="field half">
 													<label for="correo">Correo</label>
-													<input type="email" name="correo" id="correo" value="{{ old('correo')}}" />
+													<input type="email" name="correo" id="correo" value={{$correo}}>
 													@error('correo')
 														<i>{{ $message }}</i>
 													@enderror

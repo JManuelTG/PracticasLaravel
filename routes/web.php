@@ -48,4 +48,4 @@ Route::get('/contacto/{codigo?}', [SitioController::class, 'contacto'] );
 
 Route::post('/recibe_form_contacto', [SitioController::class, 'guarda'] );
 
-Route::get('/landingpage',[SitioController::class, 'landingpage']);
+Route::get('/landingpage/{codigo?}',[SitioController::class, 'landingpage']);

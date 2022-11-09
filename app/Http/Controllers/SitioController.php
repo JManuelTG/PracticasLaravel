@@ -8,8 +8,15 @@ use App\Models\Contacto;
 
 class SitioController extends Controller
 {
-    public function landingpage(){
-        return view("landingpage");
+    public function landingpage($codigo = null){
+        if($codigo == 1234){
+            $nombre = 'Manuel';
+            $correo = 'Manuel@test.com';
+        }else{
+            $nombre = '';
+            $correo = '';
+        }
+        return view("landingpage", compact('nombre','correo'));
     }
 
     // public function contacto($codigo = null){
